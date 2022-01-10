@@ -575,7 +575,7 @@ body {
 }
 
 section .title {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -671,6 +671,43 @@ section .title {
 
 .c-skills__item:not(:first-of-type) {
   margin-top: 1rem;
+}
+
+.services-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .services-container {
+    display: flex;
+  }
+}
+
+.c-service {
+  margin-bottom: 1.5rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgb(14 34 59 / 0.5);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-service {
+    width: 31%;
+  }
+}
+
+.c-service__title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {

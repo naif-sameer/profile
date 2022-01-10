@@ -20,7 +20,6 @@ body {
   &__logo {
     @apply italic font-medium text-xl text-white;
   }
-
 }
 
 .c-nav {
@@ -65,14 +64,13 @@ body {
 
 // section style
 section .title {
-  @apply text-center text-4xl mb-8;
+  @apply text-center text-4xl mb-12;
 }
 
 // about us
 .c-about {
   @apply my-8 py-16 bg-secondary text-primary;
 }
-
 
 .c-skills {
   &__title {
@@ -124,3 +122,19 @@ section .title {
   }
 }
 
+// service
+.services-container {
+  @apply py-4;
+  @apply md:flex justify-between;
+}
+
+.c-service {
+  @apply px-4 py-6 mb-6;
+  @apply border border-secondary/50;
+  @apply rounded;
+  @apply md:w-[31%];
+
+  &__title {
+    @apply text-xl font-semibold my-2;
+  }
+}
