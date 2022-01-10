@@ -62,7 +62,6 @@ body {
   }
 }
 
-
 // section style
 section .title {
   @apply text-center text-4xl mb-8;
@@ -74,21 +73,51 @@ section .title {
 }
 
 .c-skills {
-  
   &__title {
-    @apply text-3xl;
+    @apply text-3xl text-center;
   }
 
   &__list {
-    @apply mt-4 py-2 border-l-2 border-primary mx-auto;
+    @apply relative mt-4 mx-auto w-1/2 py-4 flex flex-col items-center;
+
+    &::before {
+      @apply absolute top-0 left-1/2 h-full border-l-2 border-primary -z-0;
+      content: '';
+      transform: translateX(-50%);
+    }
   }
 
   &__item {
-    @apply flex items-center text-xl;
+    @apply relative text-xl bg-primary text-secondary py-2;
+    @apply rounded text-center;
+    @apply min-w-[140px];
 
     &::before {
-      @apply inline-block w-3 bg-primary h-[2px] mr-1;
+      @apply absolute top-1/2 -right-[0.9rem] z-0;
+      @apply w-4 h-[2px];
+      @apply bg-primary;
       content: '';
+      transform: translateY(-50%);
+    }
+
+    &:nth-of-type(odd) {
+      transform: translateX(-60%);
+
+      &::before {
+        @apply -right-[0.9rem];
+      }
+    }
+    
+    &:nth-of-type(even) {
+      transform: translateX(60%);
+
+      &::before {
+        @apply -left-[0.9rem];
+      }
+    }
+
+    &:not(:first-of-type) {
+      @apply mt-4;
     }
   }
 }

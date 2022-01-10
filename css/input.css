@@ -57,19 +57,54 @@ section .title {
 }
 
 .c-skills__title {
-  @apply text-3xl;
+  @apply text-3xl text-center;
 }
 
 .c-skills__list {
-  @apply mt-4 py-2 border-l-2 border-primary mx-auto;
+  @apply relative mt-4 mx-auto w-1/2 py-4 flex flex-col items-center;
+}
+
+.c-skills__list::before {
+  @apply absolute top-0 left-1/2 h-full border-l-2 border-primary -z-0;
+  content: '';
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .c-skills__item {
-  @apply flex items-center text-xl;
+  @apply relative text-xl bg-primary text-secondary py-2;
+  @apply rounded text-center;
+  @apply min-w-[140px];
 }
 
 .c-skills__item::before {
-  @apply inline-block w-3 bg-primary h-[2px] mr-1;
+  @apply absolute top-1/2 -right-[0.9rem] z-0;
+  @apply w-4 h-[2px];
+  @apply bg-primary;
   content: '';
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.c-skills__item:nth-of-type(odd) {
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+}
+
+.c-skills__item:nth-of-type(odd)::before {
+  @apply -right-[0.9rem];
+}
+
+.c-skills__item:nth-of-type(even) {
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+}
+
+.c-skills__item:nth-of-type(even)::before {
+  @apply -left-[0.9rem];
+}
+
+.c-skills__item:not(:first-of-type) {
+  @apply mt-4;
 }
 /*# sourceMappingURL=input.css.map */
