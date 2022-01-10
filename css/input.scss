@@ -157,3 +157,60 @@ section .title {
     @apply text-white;
   }
 }
+
+// contact us
+.c-contact {
+  @apply mt-32 py-16;
+  @apply bg-secondary text-primary;
+
+  .container {
+    @apply md:flex md:flex-wrap;
+    @apply md:items-center md:justify-between;
+  }
+
+  .title {
+    @apply md:w-full;
+  }
+
+  &__form {
+    @apply md:w-full md:max-w-[400px];
+  }
+
+  &__input-group {
+    @apply flex flex-col;
+
+    &:not(:first-of-type) {
+      @apply mt-3;
+    }
+
+    input {
+      @apply w-full px-3 py-2 mt-1 rounded;
+    }
+
+    button {
+      @apply px-4 py-2 mt-4 text-primary bg-green-600 rounded-lg;
+    }
+  }
+
+  &__social {
+    @apply pr-8;
+
+    a {
+      @apply pr-4 py-2 my-4 block border-b-2 border-primary;
+    }
+  }
+}
+
+// footer
+.c-footer {
+  @apply text-center py-8;
+
+  &__title {
+    @apply text-xl mb-4;
+  }
+
+
+  &__made-with {
+    @apply text-red-600 text-lg;
+  }
+}

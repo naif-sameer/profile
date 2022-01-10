@@ -142,4 +142,58 @@ section .title {
   @apply px-8 py-2 bg-secondary;
   @apply text-white;
 }
+
+.c-contact {
+  @apply mt-32 py-16;
+  @apply bg-secondary text-primary;
+}
+
+.c-contact .container {
+  @apply md:flex md:flex-wrap;
+  @apply md:items-center md:justify-between;
+}
+
+.c-contact .title {
+  @apply md:w-full;
+}
+
+.c-contact__form {
+  @apply md:w-full md:max-w-[400px];
+}
+
+.c-contact__input-group {
+  @apply flex flex-col;
+}
+
+.c-contact__input-group:not(:first-of-type) {
+  @apply mt-3;
+}
+
+.c-contact__input-group input {
+  @apply w-full px-3 py-2 mt-1 rounded;
+}
+
+.c-contact__input-group button {
+  @apply px-4 py-2 mt-4 text-primary bg-green-600 rounded-lg;
+}
+
+.c-contact__social {
+  @apply pr-8;
+}
+
+.c-contact__social a {
+  @apply pr-4 py-2 my-4 block border-b-2 border-primary;
+}
+
+.c-footer {
+  @apply text-center py-8;
+}
+
+.c-footer__title {
+  @apply text-xl mb-4;
+}
+
+.c-footer__made-with {
+  @apply text-red-600 text-lg;
+}
 /*# sourceMappingURL=input.css.map */

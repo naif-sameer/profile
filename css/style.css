@@ -752,6 +752,113 @@ section .title {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.c-contact {
+  margin-top: 8rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 34 59 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  --tw-text-opacity: 1;
+  color: rgb(254 241 225 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .c-contact .container {
+    display: flex;
+  }
+
+  .c-contact .container {
+    flex-wrap: wrap;
+  }
+
+  .c-contact .container {
+    align-items: center;
+  }
+
+  .c-contact .container {
+    justify-content: space-between;
+  }
+
+  .c-contact .title {
+    width: 100%;
+  }
+
+  .c-contact__form {
+    width: 100%;
+  }
+
+  .c-contact__form {
+    max-width: 400px;
+  }
+}
+
+.c-contact__input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-contact__input-group:not(:first-of-type) {
+  margin-top: 0.75rem;
+}
+
+.c-contact__input-group input {
+  margin-top: 0.25rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.c-contact__input-group button {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(254 241 225 / var(--tw-text-opacity));
+}
+
+.c-contact__social {
+  padding-right: 2rem;
+}
+
+.c-contact__social a {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(254 241 225 / var(--tw-border-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+
+.c-footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.c-footer__title {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.c-footer__made-with {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:mt-0 {
     margin-top: 0px;
@@ -763,6 +870,10 @@ section .title {
 
   .md\:w-4\/5 {
     width: 80%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:flex-nowrap {
