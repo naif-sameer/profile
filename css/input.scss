@@ -21,18 +21,19 @@ body {
     @apply italic font-medium text-xl text-white;
   }
 
-  .c-nav {
-    &__list {
-      @apply flex;
-    }
+}
 
-    &__item {
-      a {
-        @apply inline-block py-4 mx-4 text-white;
+.c-nav {
+  &__list {
+    @apply flex;
+  }
 
-        &:last-of-type {
-          @apply mr-0;
-        }
+  &__item {
+    a {
+      @apply inline-block py-4 mx-4 text-white;
+
+      &:last-of-type {
+        @apply mr-0;
       }
     }
   }
@@ -72,9 +73,10 @@ section .title {
   @apply my-8 py-16 bg-secondary text-primary;
 }
 
+
 .c-skills {
   &__title {
-    @apply text-3xl text-center;
+    @apply text-3xl text-center mb-8;
   }
 
   &__list {
@@ -107,7 +109,7 @@ section .title {
         @apply -right-[0.9rem];
       }
     }
-    
+
     &:nth-of-type(even) {
       transform: translateX(60%);
 
@@ -121,3 +123,4 @@ section .title {
     }
   }
 }
+

@@ -19,15 +19,15 @@ body {
   @apply italic font-medium text-xl text-white;
 }
 
-.c-header .c-nav__list {
+.c-nav__list {
   @apply flex;
 }
 
-.c-header .c-nav__item a {
+.c-nav__item a {
   @apply inline-block py-4 mx-4 text-white;
 }
 
-.c-header .c-nav__item a:last-of-type {
+.c-nav__item a:last-of-type {
   @apply mr-0;
 }
 
@@ -57,7 +57,7 @@ section .title {
 }
 
 .c-skills__title {
-  @apply text-3xl text-center;
+  @apply text-3xl text-center mb-8;
 }
 
 .c-skills__list {

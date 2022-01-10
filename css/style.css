@@ -498,11 +498,11 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.c-header .c-nav__list {
+.c-nav__list {
   display: flex;
 }
 
-.c-header .c-nav__item a {
+.c-nav__item a {
   margin-left: 1rem;
   margin-right: 1rem;
   display: inline-block;
@@ -512,7 +512,7 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.c-header .c-nav__item a:last-of-type {
+.c-nav__item a:last-of-type {
   margin-right: 0px;
 }
 
@@ -593,6 +593,7 @@ section .title {
 }
 
 .c-skills__title {
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 1.875rem;
   line-height: 2.25rem;
