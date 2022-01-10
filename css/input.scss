@@ -1,0 +1,94 @@
+@tailwind base;
+// @tailwind utilities;
+// @tailwind components;
+
+body {
+  @apply bg-primary;
+}
+
+.container {
+  @apply px-6;
+}
+
+.c-header {
+  @apply bg-secondary;
+
+  .container {
+    @apply flex items-center justify-between;
+  }
+
+  &__logo {
+    @apply italic font-medium text-xl text-white;
+  }
+
+  .c-nav {
+    &__list {
+      @apply flex;
+    }
+
+    &__item {
+      a {
+        @apply inline-block py-4 mx-4 text-white;
+
+        &:last-of-type {
+          @apply mr-0;
+        }
+      }
+    }
+  }
+}
+
+// hero section
+.c-hero {
+  .container {
+    @apply max-w-full md:flex md:justify-between md:items-center py-8;
+  }
+
+  &__desc {
+    // @apply md:w-1/2;
+  }
+
+  &__title {
+    @apply text-5xl font-bold mb-4;
+  }
+
+  &__info {
+    @apply text-gray-700 text-2xl;
+    @apply md:w-4/5 md:max-w-[600px];
+  }
+
+  &__photo {
+    @apply mt-8 md:mt-0 md:w-[400px];
+  }
+}
+
+
+// section style
+section .title {
+  @apply text-center text-4xl mb-8;
+}
+
+// about us
+.c-about {
+  @apply my-8 py-16 bg-secondary text-primary;
+}
+
+.c-skills {
+  
+  &__title {
+    @apply text-3xl;
+  }
+
+  &__list {
+    @apply mt-4 py-2 border-l-2 border-primary mx-auto;
+  }
+
+  &__item {
+    @apply flex items-center text-xl;
+
+    &::before {
+      @apply inline-block w-3 bg-primary h-[2px] mr-1;
+      content: '';
+    }
+  }
+}
