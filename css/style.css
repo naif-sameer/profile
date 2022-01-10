@@ -674,6 +674,7 @@ section .title {
 }
 
 .services-container {
+  margin-bottom: 4rem;
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -710,6 +711,47 @@ section .title {
   font-weight: 600;
 }
 
+.c-works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-works {
+    flex-wrap: nowrap;
+  }
+}
+
+.c-works__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: rgb(14 34 59 / 0.5);
+}
+
+.c-works__item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.c-works__label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 34 59 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:mt-0 {
     margin-top: 0px;
@@ -721,6 +763,10 @@ section .title {
 
   .md\:w-4\/5 {
     width: 80%;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .md\:items-center {

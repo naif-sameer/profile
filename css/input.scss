@@ -124,7 +124,7 @@ section .title {
 
 // service
 .services-container {
-  @apply py-4;
+  @apply py-4 mb-16;
   @apply md:flex justify-between;
 }
 
@@ -136,5 +136,24 @@ section .title {
 
   &__title {
     @apply text-xl font-semibold my-2;
+  }
+}
+
+.c-works {
+  @apply flex flex-wrap md:flex-nowrap gap-4;
+
+  &__item {
+    @apply relative border border-secondary/50;
+    @apply rounded overflow-hidden;
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  &__label {
+    @apply absolute bottom-0 left-0;
+    @apply px-8 py-2 bg-secondary;
+    @apply text-white;
   }
 }
