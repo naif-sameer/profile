@@ -86,10 +86,23 @@ body {
   color: white;
 }
 
+@media (max-width: 576px) {
+  .c-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
 .c-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 576px) {
+  .c-nav__list {
+    display: none;
+  }
 }
 
 .c-nav__list a {
