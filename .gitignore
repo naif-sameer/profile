@@ -1,2 +1,3 @@
 node_modules
-css/input.scss
+*.scss
+css/*.map
