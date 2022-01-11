@@ -152,7 +152,7 @@ body {
 
 .c-hero__link {
   margin-top: 1rem;
-  background-image: var(--secondary-gradient);
+  background-color: var(--third);
   padding: 0.5rem 2rem;
   display: inline-block;
   color: white;
