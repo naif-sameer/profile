@@ -32,6 +32,9 @@
             </li>
           </ul>
         </nav>
+
+        <!-- dark/light button -->
+        <button class="mode-btn">Dark</button>
       </div>
     </header>
 
@@ -51,10 +54,6 @@
 
           <a href="#about-me" class="c-hero__link"> Learn more </a>
         </div>
-
-        <!-- <div class="c-hero__photo">
-          <img src="img/hero-bg.png" alt="hero photo" />
-        </div> -->
       </div>
     </section>
 
@@ -106,7 +105,7 @@
           <!-- service 1 -->
           <div class="c-service">
             <img
-              src="img/widget.svg"
+              src="img/icon/widget.svg"
               alt="image alt here"
               class="c-service__icon"
             />
@@ -120,7 +119,7 @@
           <!-- service 2 -->
           <div class="c-service">
             <img
-              src="img/archive-paper.svg"
+              src="img/icon/archive-paper.svg"
               alt="image alt here"
               class="c-service__icon"
             />
@@ -134,7 +133,7 @@
           <!-- service 3 -->
           <div class="c-service">
             <img
-              src="img/pencil.svg"
+              src="img/icon/pencil.svg"
               alt="image alt here"
               class="c-service__icon"
             />
@@ -157,22 +156,22 @@
 
         <div class="c-works-container">
           <div class="c-works__item">
-            <img src="img/project-1.jpg" alt="image alt here" />
+            <img src="img/projects/project-1.jpg" alt="image alt here" />
             <h4 class="c-works__label">Fosial</h4>
           </div>
 
           <div class="c-works__item">
-            <img src="img/project-2.jpg" alt="image alt here" />
+            <img src="img/projects/project-2.jpg" alt="image alt here" />
             <h4 class="c-works__label">Vance</h4>
           </div>
 
           <div class="c-works__item">
-            <img src="img/project-3.jpg" alt="image alt here" />
+            <img src="img/projects/project-3.jpg" alt="image alt here" />
             <h4 class="c-works__label">Air city</h4>
           </div>
 
           <div class="c-works__item">
-            <img src="img/project-4.jpg" alt="image alt here" />
+            <img src="img/projects/project-4.jpg" alt="image alt here" />
             <h4 class="c-works__label">Ice man</h4>
           </div>
         </div>
@@ -191,20 +190,30 @@
           <div class="c-contact__input-group">
             <label for="form-name">Name: </label>
             <input placeholder="your name..." type="text" id="form-name" />
+            <span class="form-name-err form-err"></span>
           </div>
 
           <div class="c-contact__input-group">
             <label for="form-email">Email: </label>
-            <input placeholder="your email..."  type="email" id="form-email" />
+            <input placeholder="your email..." type="text" id="form-email" />
+            <span class="form-email-err form-err"></span>
           </div>
 
           <div class="c-contact__input-group">
-            <label for="form-email">Message: </label>
-            <textarea placeholder="your message..."  name="" id="" cols="30" rows="10"></textarea>
+            <label for="form-message">Message: </label>
+            <textarea
+              id="form-message"
+              placeholder="your message..."
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+            <span class="form-message-err form-err"></span>
           </div>
 
           <div class="c-contact__input-group">
-            <button class="c-contact__btn">Send</button>
+            <button id="form-btn" class="c-contact__btn">Send</button>
           </div>
         </form>
       </div>
@@ -216,12 +225,12 @@
         <ul class="c-footer__social">
           <li class="c-footer__social-item">
             <a href="https://facebook.com/naif4web">
-              <img src="img/facebook.svg" alt="" />
+              <img src="img/icon/facebook.svg" alt="" />
             </a>
           </li>
           <li class="c-footer__social-item">
             <a href="https://twitter.com/naif4web">
-              <img src="img/twitter.svg" alt="" />
+              <img src="img/icon/twitter.svg" alt="" />
             </a>
           </li>
           <!-- <li class="c-footer__social-item">
@@ -239,5 +248,7 @@
         </h5>
       </div>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
